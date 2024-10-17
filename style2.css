@@ -1,0 +1,166 @@
+body { 
+    background-image:url(54.webp);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+
+
+.menu .navbar ul li {
+ position: relative;
+ float: left;
+}
+
+.menu .navbar ul li a {
+ font-size: 18px;
+ padding: 20px;
+ color: #FFFDFC;
+ display: block;
+ font-weight: 600;
+}
+
+#menu {
+ display: none;
+
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt {
+    text-align: center;
+    color: #FFFDFC;
+    font-size: 55px;
+    padding: 0 250px;
+    margin-bottom: 45px;
+
+}
+
+.header-txt h1 {
+    font-size: 85px;
+    color: #FFFDFC;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.header-txt h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #070707;
+}
+
+.header-txt p {
+    color: #21a3ee;
+    font-size: 55px;
+    padding: 0 250px;
+    margin-bottom: 45px;
+}
+
+
+.btn-1 {
+    display: inline-block;
+    padding: 12px 45px;
+    border: 1px solid #944c27;
+    color: #ad613a;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-1horver {
+    color: #36e64e;
+    background-color: #FFFDFC;
+}
+
+
+.header-txt h1 {
+    font-size: 100px;
+}
+
+.header-txt p {
+    padding: 0;
+}
+
+.social-list {
+    list-style: cross-fade(1);
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.social-list li {
+    margin: 8px 0;
+}
+
+.social-list a {
+    color: #255ffd;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.social-list a:hover {
+    color: #e92f86;
+}
+
+.social-list a::before {
+    content: "• ";
+    color: #ec45d6;
+    font-size: 1.2em;
+}
+
+
+@media(max-width:991px) {
+    .menu{
+        padding: 30px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1B293A;
+        display: none;
+    }
+    
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content{
+        padding: 100px 30px;
+    }
+
+    .header-txt h1 {
+        font-size: 50px;
+    }
+
+    .header-txt p {
+        padding: 0;
+    }
+}

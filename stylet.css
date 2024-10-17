@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    background-color: #1498f0b6;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 10px 0;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color:#f00641cc;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform:uppercase;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #333129;
+    display: block;
+    font-weight: 600;
+}
+
+#menu { 
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label { 
+    cursor: pointer;
+    display: none;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #333129;
+    padding: 20px;
+    min-width: 400px;
+}
+
+table{
+    width: 100%;
+}
+
+th, td {
+    color: #929292;
+}
+
+.borrar {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 5px 10%;
+    color: #ffff;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-tex {
+    flex-basis: 50%;
+}
+
+.header-txt span {
+    font-size: 16px;
+    color: rgb(231, 64, 64);
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.header-txt h1 {
+    font-size: 55px;
+    line-height: 1;
+    color: black;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 45px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 13px 25px;
+    color: #f5f5f5;
+    border-radius: 25px;
+    background-color: #12a8ff;
+    text-transform: capitalize;
+}
+
+.header-img {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.header-img img {
+    width: 400px;
+}
+
+.Informacion  { 
+    width: 70%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 25px 75px;
+    margin-top: -75px;
+    background-color: #1dd3d3;
+}
+
+.Informacion-content {
+    text-align: center;
+    display: none;
+    justify-content: space-between;
+}
+
+.Informacion-1 img {
+    width: 35px;
+
+}
+
+h3 {
+    font-size: 17px;
+    color: #080808;
+    text-transform: capitalize;
+}
+
+.Informacion-1 p {
+    margin-bottom: 0;
+}
+
+.oferts {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ofert-1 {
+    text-align: center;
+    flex-basis: calc(25% - 20px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+}
+
+.ofert-1 img {
+    width: 140px;
+    margin-bottom: 10px;
+}
+
+.ofert-1 p {
+    font-size: 15px;
+    margin: 0;
+    font-weight: 600;
+    color: #eb1414;
+}
+
+.products {
+    padding: 0 0 100px 0;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 40px;
+    color: #080808;
+    text-transform: capitalize;
+    margin-bottom: 55px;
+}
+
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+}
+
+.product {
+    text-align:  center;
+    box-shadow:  0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+}
+
+.product img {
+    width: 150px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    color: #000000e3;
+}
+
+.product p {
+    font-size: 15px;
+    margin: 0;
+    color: #080808;
+    
+    font-weight: 600;
+}
+
+.btn-2 {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 25px;
+    border-radius: 5px;
+    color: #ffff;
+    background-color: #8dc88d;
+}
+
+.service {
+    padding-bottom: 100px;
+    display: flex;
+    justify-content:center;
+}
+
+.store {
+    width: 300px;
+    height: 250px;
+}
+
+.service-1 {
+    flex-basis: 30%;
+    padding: 25px;
+    background-color: #00ff9d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact { 
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+}
+
+input {
+    padding: 17px 35px;
+    border-radius: 25px;
+    border: 1px solid rgba(42, 106, 245, 0.911);
+    outline: none;
+}
+
+.btn-3 {
+    margin-left: 10px;
+    color: #fafafa;
+    background-color: #8dc88d;
+}
+.footer {
+    padding: 50px 0 ;
+    background-color: #51d0f0;
+}
+.footer-content {
+    display: flex;
+    justify-content: center;
+}
+
+.link h3 {
+    color: #030303;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.link a {
+    color: #000000;
+    font-size:  15px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+@media( max-width:991px) {
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu.navbar {
+        position: absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        background-color: #303030;
+        display: none;
+    }
+
+    .menu.navbar ul li {
+        width: 100%;
+    }
+    .menu.navbar ul li a {
+        color: #ffff;
+    }
+
+    .logo {
+        display:none ;
+    }
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .submenu:hover #carrito {
+        min-width: 340px;
+    }
+
+    .header {
+        min-height: 0vh;
+        padding: 100px 30px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-img img {
+        width: 300px;
+    }
+
+    .Informacion {
+        display: none;
+    }
+
+    .ofert-1 {
+        margin-bottom: 25px;
+    }
+
+    .products {
+        padding: 30px;
+    }
+
+    .product-content { 
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .service {
+        flex-direction: column;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
